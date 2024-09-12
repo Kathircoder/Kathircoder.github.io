@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="http://kit.fontawesome.com/253687f08a.js" crossorigin="anonymous"></script>*/
+    <script src="http://kit.fontawesome.com/253687f08a.js" crossorigin="anonymous"></script>
     <style>
         * {
             margin: 0px;
+          
             padding: 0px;
         }
 
 
         body {
-            width: 100vw;
+            width: 100vw; 
             background-color: #ebf5fb;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             display: flex;
@@ -130,6 +131,7 @@ background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, F
             font-weight: bold;
             padding-bottom: 10px;
         }
+        
         .section-2 p {
             margin-left: 2vh;
         }
@@ -155,16 +157,12 @@ background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, F
             color: #21618c;
             padding: 10px;
         }
-        .section-4 p {
-            margin-left: 2vh;
-            padding-bottom: 3vh;
-        }
         .section-5 {
             width: 50%;
             height: 5rem;
             background: #373B44;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
             border-left: 1px solid #34495e;
             border-right: 1px solid #34495e;
             border-top: 1px solid #34495e;
@@ -256,23 +254,47 @@ background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, F
     opacity: 1;
   }
 }
-.para {
+.profile-data h1 {
+  border-top: 2px solid white;
+}
+.profile-data h3 {
+  padding-bottom: 8px;
+  border-bottom: 2px solid white;
+}
+.list {
+  list-style: square;
   font-size: 20px;
-  font-family: "Roboto";
-
+  font-family: sans-serif;
+  margin-left: 6vh;
 }
 
+.section-6 {
+            width: 50%;
+            height: 12rem;
+            /* background-color: aquamarine; */
+            border-left: 1px solid #34495e;
+            border-right: 1px solid #34495e;
+            border-bottom: 1px solid #34495e;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+           
+            /* padding: 10px; */
+        }
     </style>
 </head>
 <body>
     <div class="section-1">
         <div class="profile-img-section">
-            <img class="profile-img" src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhzqs_Sml0HFbOKjp5GUESAtuVBNjq1m-SOA&s" alt="kathir">
+            <img class="profile-img" src="/img/Suriya2011.jpg" alt="kathir">
 
         </div>
         <div class="profile-data">
-            <h1>Kathiravan B</h1>
+  
+          <h1>Kathiravan B</h1>
             <h3>bkathiravan01@gmail.com</h3>
+          </div>
 
         </div>
     </div>
@@ -280,6 +302,7 @@ background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, F
         <h1 class="section-title">
             Objective
         </h1>
+        <hr>
         <h4 class="write">
           Iam kathir here to present my resume with you as my oppurtunities and my carrier portfolio
         </h4>
@@ -295,18 +318,18 @@ background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, F
                 <th>Score</th>
             </tr>
             <tr>
-                <td>Dog-1</td>
-                <td>School-1</td>
+                <td>Schooling</td>
+                <td>RKV CBSE</td>
+                <td>85%</td>
+            </tr>
+            <tr>
+                <td>High-school</td>
+                <td>RKV CBSE</td>
                 <td>90%</td>
             </tr>
             <tr>
-                <td>Dog-1</td>
-                <td>School-1</td>
-                <td>90%</td>
-            </tr>
-            <tr>
-                <td>Dog-1</td>
-                <td>School-1</td>
+                <td>college</td>
+                <td>Sri Shakthi</td>
                 <td>90%</td>
             </tr>
         </table>
@@ -315,18 +338,30 @@ background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, F
         <h1 class="section-title">
             Internship
         </h1>
-        <p class="para">
-            <span class="companies">ACCOUNT MANAGER / VANARSDEL, LTD</span><br>
+        <p class="write">
+            <span class="companies">MICROSOFT, LTD</span><br>
             JUNE 2024 PRESENT
             Managed and grew key account by developing strong relation
             implementing effective sales strategies
         </p>
-        <p class="para">
-            <span class="companies">ACCOUNT MANAGER / VANARSDEL, LTD</span><br>
+        <p class="write">
+            <span class="companies">IBM, LTD</span><br>
             JUNE 2024 PRESENT
             Managed and grew key account by developing strong relation
             implementing effective sales strategies
         </p>
+    </div>
+    <div class="section-6">
+      <h1 class="section-title">
+        Skills
+      </h1>
+        <ul>
+          <li class="list">MERN</li>
+          <li class="list">java</li>
+          <li class="list">Python</li>
+          <li class="list">Hindi</li>
+        </ul>
+    
     </div>
     <div class="section-5">
 <div class="card">
@@ -364,6 +399,8 @@ background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, F
 </div>
 
     </div>
+    
+
 </body>
 <script>
   let datajs={
